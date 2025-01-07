@@ -1,0 +1,54 @@
+# This file is in YAML format. You must ensure that the punctuation
+# and whitespace is preserved. Do NOT use Windows Notepad to edit this
+# file; use a real programming editor like Notepad++ instead.
+
+# Write your group name exactly as it appears on Canvas.
+group: A17
+
+# Write the names of your group members as a comma-separated list
+# within the square brackets.
+members: [Mohan Sanghishetty, Venkatesh Kancharlapalli, .Sri Ganesh Thotakura, Srikar Bakani, Sriram Reddy Kesireddy]
+
+# Write your general topic.
+topic: Analysis of Employee Data
+
+# Write your research question, following one of the three allowed templates.
+# Be sure your question is all on one line.
+RQ: Is there any significant association between employees age and monthly income?
+
+# Write your independent and dependent variables. These should be the column names (reported by R colnames()) where these variables are found in your dataset's CSV file.
+independent-var: [Age]
+dependent-var: [MonthlyIncome]
+
+# Write the null hypothesis for your research question, again ensuring it is all on one line.
+null-hypothesis: There is no significant association between employee age and monthly income.
+
+# Write the alternative hypothesis for your research question, again ensuring it is all on one line.
+alt-hypothesis: There is a significant association between employee age and monthly income.
+
+# Write the dataset ID (KNNN):
+dataset-id: DS018
+
+# Write the dataset URL.
+dataset-url: https://www.kaggle.com/datasets/rohitsahoo/employee
+
+# Write the dataset CSV filename, exactly as it appears on the SharePoint list (which should be the same as the one in your repository!)
+dataset-file: file.csv
+
+# Paste the output of loading your dataset into R, and executing the colnames() function, into the space below the `columns: |` line.
+# Put two spaces *before* every line you pasted.
+
+# Reading dataset
+EmployeeData <- read_csv("file.csv", show_col_types = FALSE)
+
+# Print column names of the dataset
+colnames(EmployeeData)
+ [1] "Age"                      "Attrition"                "BusinessTravel"           "DailyRate"               
+ [5] "Department"               "DistanceFromHome"         "Education"                "EducationField"          
+ [9] "EmployeeCount"            "EmployeeNumber"           "EnvironmentSatisfaction"  "Gender"                  
+[13] "HourlyRate"               "JobInvolvement"           "JobLevel"                 "JobRole"                 
+[17] "JobSatisfaction"          "MaritalStatus"            "MonthlyIncome"            "MonthlyRate"             
+[21] "NumCompaniesWorked"       "Over18"                   "OverTime"                 "PercentSalaryHike"       
+[25] "PerformanceRating"        "RelationshipSatisfaction" "StandardHours"            "StockOptionLevel"        
+[29] "TotalWorkingYears"        "TrainingTimesLastYear"    "WorkLifeBalance"          "YearsAtCompany"          
+[33] "YearsInCurrentRole"       "YearsSinceLastPromotion"  "YearsWithCurrManager"    
